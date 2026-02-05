@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+    /*grid-template-columns: 1fr 1fr;*/
+    gap: 20px;
+    padding: 40px 24px;
+    height: 100vh;
+}
+
+/* LEFT COLUMN */
+.left {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 500px;
+
+  margin-top: 24px;
+  margin-left: 24px;
+
+  padding: 60px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Spacing and Input Styling */
+.left input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Make room for the eye icon */
+    box-sizing: border-box;
+}
+
+.input-container:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.input-container:nth-child(2) {
+    margin-bottom: 60px;
+}
+
+/* Eye Icon Styling */
+#toggleIcon {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#toggleIcon:hover {
+    opacity: 1;
+}
+
+/*idInstance content showing */
+
+
+.left input:nth-child(2) {
+    /* ApiTokenInstance */
+    margin-bottom: 60px;
+}
+
+.left button:nth-child(3) {
+    /* getSettings */
+    margin-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.left button:nth-child(4) {
+    /* getStateInstance */
+    margin-bottom: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.left input:nth-child(5) {
+    /* phone for sendMessage */
+    margin-bottom: 10px;
+    
+}
+
+.left textarea:nth-child(6) {
+    /* message text */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 85px;
+}
+
+.left button:nth-child(7) {
+    /* sendMessage button */
+    margin-bottom: 16px; /* Push next group to bottom */
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.left input:nth-child(8) {
+    /* phone for sendFile */
+    margin-bottom: 5px;
+}
+
+.left input:nth-child(9) {
+    /* file URL */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.left button:nth-child(10) {
+    /* sendFileByUrl button */
+    margin-top: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: 2px solid black;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+button:active {
+    background: #333;
+}
+
+/* RIGHT COLUMN */
+.right {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    padding: 50px;
+    width: 100%;
+}
+
+.label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    flex: 1;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 12px;
+    resize: none;
+    background: white;
+}
+
+textarea:focus {
+    outline: 2px solid black;
+}
