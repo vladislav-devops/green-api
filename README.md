@@ -13,7 +13,7 @@
 
 ## Скриншот
 
-[> *Добавьте скриншот работающего приложения: `![screenshot](img/screenshot.jpg)`*](https://github.com/vladislav-devops/green-api/blob/main/img/screenshot.jpg)
+<img width="1280" height="911" alt="image" src="https://github.com/user-attachments/assets/1d849c4b-d1e0-4023-ad11-507c43bddec4" />
 
 ## Возможности
 
